@@ -24,3 +24,9 @@ b) tilde is used in the major upgrade of the package version
 -> Code splitting
 -> Differential bundling: supporting of older browser and bundlers for our app
 -> Tree Shaking: removes unused code or random ones when not in use
+
+# JSX
+-> JSX code transpiled before it reaches JS engines, transpilation means converting this code which the browsers can understand,
+-> done by babel which PARCEL provides 
+-> JSX ----> react.createElement() -> further transpiled to JS Object ----> after transpilation, it is displayed as HTML element
+
