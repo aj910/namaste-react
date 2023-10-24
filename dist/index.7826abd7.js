@@ -2936,14 +2936,32 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(heading);
 console.log(heading);
+const JsxComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "Hello React World"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 13,
+        columnNumber: 12
+    }, undefined);
+};
+_c = JsxComponent;
+console.log(JsxComponent, "data");
 const jsxElement = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
     children: "React Practice Series 2"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 12,
+    lineNumber: 18,
     columnNumber: 20
 }, undefined);
 root.render(jsxElement);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(JsxComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 22,
+    columnNumber: 13
+}, undefined));
+var _c;
+$RefreshReg$(_c, "JsxComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
