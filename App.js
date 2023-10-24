@@ -7,13 +7,16 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(heading);
 
-console.log(heading)
+const Title = () => <h5>I am learning React</h5>
 
-const JsxComponent = () => {
-    return <h4>Hello React World</h4>
-}
+const JsxComponent = () => (
+    <>
+<h3>Hello Learning World!!!</h3>
+<Title />
+</>
+)
 
-console.log(JsxComponent, "data")
+
 
 const jsxElement = <h3>React Practice Series 2</h3> 
 

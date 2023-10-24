@@ -2935,33 +2935,47 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {
 }, "React Practice Series");
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(heading);
-console.log(heading);
-const JsxComponent = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: "Hello React World"
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+        children: "I am learning React"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 13,
-        columnNumber: 12
+        lineNumber: 10,
+        columnNumber: 21
     }, undefined);
-};
-_c = JsxComponent;
-console.log(JsxComponent, "data");
+_c = Title;
+const JsxComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Hello Learning World!!!"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 14,
+                columnNumber: 1
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 15,
+                columnNumber: 1
+            }, undefined)
+        ]
+    }, void 0, true);
+_c1 = JsxComponent;
 const jsxElement = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
     children: "React Practice Series 2"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 18,
+    lineNumber: 21,
     columnNumber: 20
 }, undefined);
 root.render(jsxElement);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(JsxComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 22,
+    lineNumber: 25,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "JsxComponent");
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "JsxComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
