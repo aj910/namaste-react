@@ -1,3 +1,57 @@
-#root {
-    color: orangered;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: coral;
+  box-shadow: 10px 10px lightblue;
+}
+
+
+.logoImg {
+    width: 170px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+}
+.nav-items {
+    padding: 10px 20px;
+}
+
+.nav-items > ul > li {
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+}
+
+.search {
+    padding: 15px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.rest-container:hover {
+    box-shadow: 10px 10px wheat;
+    cursor: pointer;
+}
+
+.foodCard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rest-container {
+    width: 250px;
+    height: 350px;
+    margin: 15px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px lightblue;
+}
+
+.food-cardImg {
+    width: 100%;
+    height: 40%;
 }

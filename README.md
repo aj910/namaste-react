@@ -33,7 +33,9 @@ b) tilde is used in the major upgrade of the package version
 -> We can write a normal js function inside JSX as well
 -> It is also possible to call a React component inside another component just in the same way as we call a normal function
 
+
 # Component Composition in react
 -> composing or wrapping one or more components into another
 
-
+# Props in React
+-> pass props or properties to a function or a component is same as passing arguments to a function
