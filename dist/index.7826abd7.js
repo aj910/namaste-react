@@ -2935,47 +2935,66 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {
 }, "React Practice Series");
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(heading);
-const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-        children: "I am learning React"
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+        children: "I am learning react components"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 10,
+        lineNumber: 9,
         columnNumber: 21
     }, undefined);
 _c = Title;
+const number = 10;
 const JsxComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: number + number
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 13,
+                columnNumber: 5
+            }, undefined),
+            Title(),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 15,
+                columnNumber: 1
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Hello Learning World!!!"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 14,
-                columnNumber: 1
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 1
             }, undefined)
         ]
     }, void 0, true);
 _c1 = JsxComponent;
+const ReactComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+        children: "This is my component!!"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 22,
+        columnNumber: 30
+    }, undefined);
+_c2 = ReactComponent;
+//console.log(ReactComponent)
 const jsxElement = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
     children: "React Practice Series 2"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 21,
+    lineNumber: 26,
     columnNumber: 20
 }, undefined);
 root.render(jsxElement);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(JsxComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 25,
+    lineNumber: 30,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
+var _c, _c1, _c2;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "JsxComponent");
+$RefreshReg$(_c2, "ReactComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {

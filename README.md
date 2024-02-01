@@ -29,7 +29,11 @@ b) tilde is used in the major upgrade of the package version
 -> JSX code transpiled before it reaches JS engines, transpilation means converting this code which the browsers can understand,
 -> done by babel which PARCEL provides 
 -> JSX ----> react.createElement() -> further transpiled to JS Object ----> after transpilation, it is displayed as HTML element
--> A function which returns some JSX code is a functional component in React
+-> A function which returns some JSX code is a functional component in React.
+-> We can write a normal js function inside JSX as well
+-> It is also possible to call a React component inside another component just in the same way as we call a normal function
 
 # Component Composition in react
 -> composing or wrapping one or more components into another
+
+
