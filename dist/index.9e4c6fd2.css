@@ -24,8 +24,9 @@
   font-size: large;
 }
 
-.search {
-  padding: 15px;
+.filter-btn {
+  cursor: pointer;
+  margin: 20px;
 }
 
 .card-text {

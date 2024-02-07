@@ -1,4 +1,5 @@
 import React from "react";
+import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
     const {resData} = props;
@@ -8,7 +9,7 @@ const RestaurantCard = (props) => {
         
         <div className="rest-container">
             <h3 className="card-text">{name}</h3> 
-            <img className="food-cardImg" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_140,c_fill/" + cloudinaryImageId}
+            <img className="food-cardImg" src={CDN_URL + cloudinaryImageId}
                  alt="food card" />
             <h4>{cuisines.join(", ")}</h4>
             <h4>₹{costForTwo / 100} FOR TWO</h4>
