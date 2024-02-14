@@ -43,4 +43,5 @@ b) tilde is used in the major upgrade of the package version
 # react useState Hook
 -> const [name, setName] = useState("Anmol") // default value given to state variable name
 -> <button onclick={() => setName("Sameer")}>{name}</button>
--> on click of the button, react will call setName function with new value of the name and then render the entire component with the updated value Sameer
+-> on click of the button, react will call setName function with new value of the name and then render the entire component with the updated value Sameer.
+-> when you change a local state variable, react triggers a reconciliation cycle(re-renders the component)
