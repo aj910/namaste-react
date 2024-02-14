@@ -39,3 +39,8 @@ b) tilde is used in the major upgrade of the package version
 
 # Props in React
 -> pass props or properties to a function or a component is same as passing arguments to a function
+
+# react useState Hook
+-> const [name, setName] = useState("Anmol") // default value given to state variable name
+-> <button onclick={() => setName("Sameer")}>{name}</button>
+-> on click of the button, react will call setName function with new value of the name and then render the entire component with the updated value Sameer
