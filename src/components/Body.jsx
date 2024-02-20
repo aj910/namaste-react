@@ -10,11 +10,11 @@ const Body = () => {
     }, []);
 
     const fetchRestaurantData = async () => {
-        const restData = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
+        const restData = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=28.665247&lng=77.121844");
 
         const json = await restData.json();
         console.log(json, "data is");
-        setResList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setResList(json?.data?.cards[4]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
     }
 
     return resList.length === 0 ? (<Shimmer />
