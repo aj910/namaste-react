@@ -14,7 +14,7 @@ const Body = () => {
 
         const json = await restData.json();
         console.log(json, "data is");
-        setResList(json?.data?.cards[4]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+        setResList(json?.data?.cards[3]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
     }
 
     return resList.length === 0 ? (<Shimmer />
