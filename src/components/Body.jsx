@@ -12,7 +12,13 @@ const Body = () => {
     }, []);
 
     const fetchRestaurantData = async () => {
-        const restaurantData = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=28.5750157&lng=77.2297006");
+       // const restaurantData = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=28.5750157&lng=77.2297006");
+       const restaurantData = await fetch('https://proxy.cors.sh/https://www.swiggy.com/mapi/homepage/getCards?lat=28.5750157&lng=77.2297006', {
+        headers: {
+        'x-cors-api-key': 'temp_5aa3568d4be1a9629a66474b9e552efe',
+        }
+      })
+
         const json = await restaurantData.json();
         setRestaurantList(json?.data?.success?.cards[4]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.success?.cards[4]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
